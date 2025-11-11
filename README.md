@@ -15,40 +15,17 @@ coloración térmica y leves destellos superficiales.
 ------------------------------------------------------------------------
 
 Uniformes principales
-
-  ------------------------------------------------------------------------
-  Uniform                 Tipo           Descripción
-  ----------------------- -------------- ---------------------------------
-  time                    float          Controla la animación continua;
-                                         se actualiza en cada frame.
-
-  noiseScale              float          Escala espacial del ruido Perlin;
-                                         define el tamaño de los patrones
-                                         de turbulencia.
-
-  noiseAmplitude          float          Intensidad del desplazamiento de
-                                         vértices (flare superficial).
-
-  vertexTwist             float          Factor de pulsación/distorsión
-                                         adicional basado en seno del
-                                         tiempo.
-
-  emissionBoost           float          Multiplicador de brillo global de
-                                         la estrella.
-
-  pulseAmp                float          Amplitud de las pulsaciones
-                                         periódicas de emisión.
-
-  tempCold / tempHot      float          Representan temperaturas
-                                         relativas (solo referenciales
-                                         para gradiente visual).
-
-  uModel, uView, uProj    mat4           Matrices de transformación
-                                         estándar.
-
-  viewPos                 vec3           Posición de la cámara (usada para
-                                         dirección de luz básica).
-  ------------------------------------------------------------------------
+| **Uniform**              | **Tipo** | **Descripción** |
+|---------------------------|----------|-----------------|
+| `time`                    | `float`  | Controla la animación continua; se actualiza en cada frame. |
+| `noiseScale`              | `float`  | Escala espacial del ruido Perlin; define el tamaño de los patrones de turbulencia. |
+| `noiseAmplitude`          | `float`  | Intensidad del desplazamiento de vértices (flare superficial). |
+| `vertexTwist`             | `float`  | Factor de pulsación/distorsión adicional basado en seno del tiempo. |
+| `emissionBoost`           | `float`  | Multiplicador de brillo global de la estrella. |
+| `pulseAmp`                | `float`  | Amplitud de las pulsaciones periódicas de emisión. |
+| `tempCold` / `tempHot`    | `float`  | Representan temperaturas relativas (solo referenciales para gradiente visual). |
+| `uModel`, `uView`, `uProj`| `mat4`   | Matrices de transformación estándar. |
+| `viewPos`                 | `vec3`   | Posición de la cámara (usada para dirección de luz básica). |
 
 ------------------------------------------------------------------------
 Funciones clave del shader
