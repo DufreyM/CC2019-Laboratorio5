@@ -1,0 +1,12 @@
+[package]
+name = "CC2018-Laboratorio5"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+glium = "0.29"
+glutin = "0.28"
+tobj = "3.0"
+cgmath = "0.18"
+image = "0.24"        # opcional para capturas si quieres
+instant = "0.1"
